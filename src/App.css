@@ -32,6 +32,53 @@
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  color: lightgreen;
+}
+
+.lists {
+  width: 25%;
+}
+
+.list {
+  width: 100%;
+}
+
+.list li {
+  font-size: 1.6rem;
+}
+
+.end-list {
+  margin-bottom: 200px;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+
+
+#fetch-btn {
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  margin-top: 20px;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+
+#response-output {
+  font-size: 1.7rem;
+  color: red;
 }
 
 @keyframes App-logo-spin {
