@@ -4,5 +4,6 @@ exports.handler = async function () {
         body: JSON.stringify({
             message: "Hello World!"
         })
+        console.log("hello hello")
     }
 }
