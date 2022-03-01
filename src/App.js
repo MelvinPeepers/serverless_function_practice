@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import function_pic from './img/function_pic.png';
 import exports_pic from './img/exports_pic.png';
 import handler_pic from './img/handler_pic.png';
@@ -22,6 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function App() {
+
+  const [message, setMessage] = useState('text')
+
+  const fetchData = async () => {
+    const results = await axios.get('/.netlify/functions/helloWorld')
+    console.log(results.data.message)
+    setMessage(results.data.message)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -92,6 +107,7 @@ This is the syntax for defining an export.</p>
               </ul>
             </li>
           </ul>
+          <p>{message}</p>
         </div>
 
       </header>
