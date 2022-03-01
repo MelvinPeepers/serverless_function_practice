@@ -1,3 +1,4 @@
+import React from 'react';
 import function_pic from './img/function_pic.png';
 import exports_pic from './img/exports_pic.png';
 import handler_pic from './img/handler_pic.png';
