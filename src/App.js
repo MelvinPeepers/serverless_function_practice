@@ -69,7 +69,7 @@ function App() {
 
         <div className="lists">
           <h2>Basic anatomy of a serverless function</h2>
-          <img src={function_pic} alt="anatomy of a serverless function" />
+          <img src={function_pic} className="img-function" alt="anatomy of a serverless function" />
           <button id='fetch-btn'>Fetch</button>
           <p id="response-output">Response Placeholder</p>
         </div>

@@ -65,7 +65,9 @@ p {
   font-size: 1.6rem;
 }
 
-
+img-function {
+  margin: 0 auto;
+}
 
 #fetch-btn {
   padding: 1rem 2rem;
