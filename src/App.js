@@ -75,7 +75,7 @@ function App() {
         </div>
 
         <div className="lists">
-        <img src={exports_pic} alt="exports of a serverless function" />
+        <img src={exports_pic} className="img-function" alt="exports of a serverless function" />
           <p>Serverless function MUST contain an export of a function called handler.
 This is the syntax for defining an export.</p>
         </div>
@@ -86,12 +86,12 @@ This is the syntax for defining an export.</p>
         </div>
 
         <div className="lists">
-          <img src={async_function_pic} alt="async function" />
+          <img src={async_function_pic} className="img-function" alt="async function" />
           <p>Assign the handler an asynchronous function because serverless functions are expected to run asynchronously.</p>
         </div>
 
         <div className="lists">
-          <img src={object_pic} alt="handler returns an object" />
+          <img src={object_pic} className="img-function" alt="handler returns an object" />
           <p>Finally, the handler function is expected to return an object.</p>
         </div>
 
